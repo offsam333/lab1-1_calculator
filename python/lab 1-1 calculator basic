@@ -1,0 +1,23 @@
+#덧셈 및 뺄셈 함수
+def add(x,y):
+    return x+y
+
+def sub(x,y):
+    return x-y
+
+#메인함수
+print("연산을 선택해주세요.")
+print("1.Add")
+print("2.Subtract")
+
+c = input("1,2중 하나를 선택해주세요: ")
+
+n1 = float(input("첫번째 숫자를 입력하시오: "))
+n2 = float(input("두번째 숫자를 입력하시오: "))
+
+if c == '1':
+    print(n1,'+',n2,'=',add(n1,n2))
+elif c=='2':
+    print(n1,'-',n2,'=',sub(n1,n2))
+else:
+    print("틀린 입력을 하였습니다.")
